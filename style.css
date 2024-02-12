@@ -17,6 +17,11 @@ body {
     grid-template-columns: 1fr 4fr;
 }
 
+button {
+    padding: 0;
+    margin: 0;
+}
+
 .sidebar {
     background-color: #1992d4;
     color: var(--primary-color);
@@ -31,6 +36,7 @@ body {
 
 .dashboard-logo>h2 {
     color: var(--primary-color);
+    margin-left: 0.5em;
 }
 
 .main-nav-menu>ul,
@@ -55,4 +61,71 @@ body {
 .main-nav-menu>ul>li>p,
 .meta-nav-menu>ul>li>p {
     margin: 0 0 0 1.2em;
+}
+
+.top-bar {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-search>label>svg {
+    width: 1.2em;
+}
+
+#search-bar {
+    width: clamp(18em, 50vw, 45em);
+    height: 1.8em;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 0.9em;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+
+.top-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.notification-button {
+    background-color: rgb(0 0 0 /0);
+    width: 1.5em;
+    border: none;
+    cursor: pointer;
+    margin-right: 1.6em;
+}
+
+.notification-button>svg {
+    width: 1.3em;
+}
+
+
+.nav-user {
+    display: flex;
+    align-items: center;
+}
+
+#user-button {
+    background-color: rgb(0 0 0 /0);
+    width: 3em;
+    height: 3em;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.5em;
+    flex: 1;
+    margin-right: 1.6em;
+}
+
+#user-button>img {
+    width: 3em;
+    height: 3em;
+    border-radius: 1.5em;
 }
