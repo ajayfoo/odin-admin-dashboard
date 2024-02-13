@@ -220,7 +220,7 @@ main {
 
 .project-text>p {
     font-size: 0.9rem;
-    width: 45ch;
+    width: 40ch;
     color: rgb(99 99 99);
 }
 
@@ -249,17 +249,35 @@ main {
     font-size: 1.1rem;
 }
 
-.announcements-items>section>h3 {
-    font-size: 1rem;
-}
-
 .announcements-items,
 .project-card,
 .trending-items {
     background-color: rgb(255 255 255);
 }
 
+.announcements-items {
+    border-radius: 5px;
+    padding: 1.8em 1.4em;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 0.1);
+}
+
+.announcements-items>section {
+    padding: 0 0.5em 0.9em;
+    border-bottom: 1px solid rgb(210 210 210);
+    margin-bottom: 0.9em;
+}
+
+.announcements-items>section:last-child {
+    margin: 0;
+    padding: 0 0.5em 0;
+    border-bottom: none;
+}
+
+.announcements-items>section>h3 {
+    font-size: 0.95rem;
+}
 
 .announcements-items>section>p {
     font-size: 0.8rem;
+    color: rgb(99 99 99);
 }
